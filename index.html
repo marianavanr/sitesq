@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SALUS QUIROPRAXIA</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() {
+
+$(".prev").on('click', function(event) {
+    event.preventDefault();
+    prevSlide();
+});
+
+$(".next").on('click', function(event) {
+    event.preventDefault();
+    nextSlide();
+});
+
+if ($(".item").length <= 1) {
+    $(".next").addClass('hide-nav');
+}
+
+$(".prev").addClass('hide-nav');
+
+function nextSlide() {
+    var atual = $(".cd-slider").find('.current'),
+        next = atual.next();
+
+    next.addClass('current').removeClass('prev_slide').siblings().removeClass('current');
+    next.prevAll().addClass('prev_slide');
+
+    if (next.index() > 0) {
+        $(".prev").removeClass('hide-nav');
+    }
+    if (next.index() == $(".item").last().index()) {
+        $(".next").addClass('hide-nav');
+    }
+}
+
+function prevSlide() {
+    var atual = $(".cd-slider").find('.current'),
+        prev = atual.prev();
+
+    prev.addClass('current').removeClass('prev_slide').siblings().removeClass('current');
+
+    if (prev.index() !== $(".item").last().index()) {
+        $(".next").removeClass('hide-nav');
+    } 
+    if (prev.index() == 0) {
+        $(".prev").addClass('hide-nav');
+    }
+}
+
+});
+    </script>
+
+
+</head>
+<body>
+
+   
+    <section class="nav_centainner">
+        <div class="nav_limit">
+            <div class="nav_logo">
+                
+            </div>
+            <nav class="nav_nav" data-name="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="quemsomos.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a href="localizacao.html">Localização</a>
+                    </li>
+                   
+                   
+                </ul>
+            </nav>
+            <div class="nav_hamburguer" data-name="nav_hambuerguer">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="containner_01">
+        <div class="containner_01_limit">
+            <div class="containner_01_div_01">
+                <h2 class="containner_01_title">
+                    CONECTANDO <j style="color:#00ffcc;"></j><br>
+                    CORPO <j style="color:#00ffcc;">&</j>
+                    MENTE<j style="color:#00ffcc;">.</j>
+                </h2>
+                
+            </div>
+
+            <div class="containner_01_div_02">
+                
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="containner_02_limit">
+        
+        <div class="containner_02_01">
+           <img src="./img/ativo1.png" width=170%; height=auto; />
+        </div>
+        <div class="containner_02_02">
+
+            <h1 class="title_universal">CONHEÇA A SALUS</h1> 
+
+            <h2 class="texto_corrido"> 
+               &emsp; A Salus quiropraxia traz um novo conceito de espaço de tratamento, 
+            comprometido em elevar a qualidade de vida e saúde. Escolhemos o nome Salus
+            pela premissa e significados que remetem justamente aos efeitos de tratamento
+            que a quiropraxia nos proporciona. Concentramos em melhorar o bem-estar dos
+             nossos pacientes, reduzindo qualquer dor que possa surgir e prevenindo qualquer 
+             risco de dor e mal-estar antes mesmo que eles comecem.
+            </h2>
+        </div>
+    </section>
+
+    <section class="containner_03">
+        <div class="containner_03_limit">
+            
+            <div class="containner_03_div_divs">
+                <div class="containner_03_div">
+                    <div class="containner_03_div_topo">
+                        <div class="containner_03_tumbnail">
+                        </div>
+                        <div class="containner_03_title"><br>
+                           <br> <img src="./img/help-button.png"/> &ensp; O que é a Quiropraxia
+                        </div>
+                    </div>
+                    <h2 class="texto_corrido">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </h2>
+                    <a href="servicos.html" class="containner_03_div_button">Saiba mais</a>
+                </div>
+                <div class="containner_03_div">
+                    <div class="containner_03_div_topo">
+                        <div class="containner_03_tumbnail">
+
+                        </div>
+                        <div class="containner_03_title"><br>
+                            &emsp; <img src="./img/big-calendar.png" /> &emsp; Como Agendar
+                        </div>
+                    </div>
+                    <h2 class="texto_corrido">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </h2>
+                    <a href="servicos.html" class="containner_03_div_button">Saiba mais</a>
+                </div>
+                <div class="containner_03_div">
+                    <div class="containner_03_div_topo">
+                        <div class="containner_03_tumbnail">
+                        </div>
+                        <div class="containner_03_title"><br>
+                           &emsp; &ensp; <img src="./img/mail.png"/> &emsp; 1ª Consulta
+                        </div>
+                    </div>
+                    <h2 class="texto_corrido">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </h2>
+                    <a href="servicos.html" class="containner_03_div_button">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ct08_bg">
+        <div class="ct08_limit">
+            <div class="ct08_div_esquerda">
+                <div class="ct8_titulos">
+                        <h1 class="sub_universal">
+                            <h2 class="containner_01_title">
+                                &emsp;&ensp; <j style="color:#00ffcc;">O QUE DIZEM</j><br>
+                                SOBRE A SALUS<j style="color:#00ffcc;"> ?</j>
+                            </h2>
+                        </h1>
+                        
+                    </div>
+                </div>
+
+            
+            
+            
+           
+        
+        
+                
+            <div class="cd-slider">
+                <ul>
+                  <li class="item current" style="background: #151515;">
+                    <div class="card" style="background: #151515;">
+                      <!-- <img src="url"> -->
+                      <div class="img">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                          <path fill="#FFFFFF" d="M18.21,16.157v-8.21c0-0.756-0.613-1.368-1.368-1.368h-1.368v1.368v1.368v6.841l-1.368,3.421h5.473L18.21,16.157z"></path>
+                          <path fill="#FFFFFF" d="M4.527,9.316V7.948V6.579H3.159c-0.756,0-1.368,0.613-1.368,1.368v8.21l-1.368,3.421h5.473l-1.368-3.421V9.316z"></path>
+                          <path fill="#FFFFFF" d="M14.766,5.895h0.023V5.21c0-2.644-2.145-4.788-4.789-4.788S5.211,2.566,5.211,5.21v0.685h0.023H14.766zM12.737,3.843c0.378,0,0.684,0.307,0.684,0.684s-0.306,0.684-0.684,0.684c-0.378,0-0.684-0.307-0.684-0.684S12.358,3.843,12.737,3.843z M10,1.448c0.755,0,1.368,0.613,1.368,1.368S10.755,4.185,10,4.185c-0.756,0-1.368-0.613-1.368-1.368S9.244,1.448,10,1.448z"></path>
+                          <path fill="#FFFFFF" d="M14.789,6.579H5.211v9.578l1.368,1.368h6.841l1.368-1.368V6.579z M12.052,12.052H7.948c-0.378,0-0.684-0.306-0.684-0.684c0-0.378,0.306-0.684,0.684-0.684h4.105c0.378,0,0.684,0.306,0.684,0.684C12.737,11.746,12.431,12.052,12.052,12.052z M12.052,9.316H7.948c-0.378,0-0.684-0.307-0.684-0.684s0.306-0.684,0.684-0.684h4.105c0.378,0,0.684,0.307,0.684,0.684S12.431,9.316,12.052,9.316z"></path>
+                        </svg>
+                      </div>
+                      <div class="info">
+                      <h1>Title Card #1</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorem aperiam eos beatae inventore ad non, sunt quo minima dolor. Voluptatibus quisquam, sunt officiis a reiciendis ex eaque doloremque consectetur?</p>
+                        <a href="#">Buy Now</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item" style="background: #151515;">
+                    <div class="card" style="background: #151515;">
+                      <!-- <img src="url"> -->
+                      <div class="img">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                          <path fill="#FFFFFF" d="M16.853,8.355V5.888c0-3.015-2.467-5.482-5.482-5.482H8.629c-3.015,0-5.482,2.467-5.482,5.482v2.467l-2.741,7.127c0,1.371,4.295,4.112,9.594,4.112s9.594-2.741,9.594-4.112L16.853,8.355z M5.888,17.367c-0.284,0-0.514-0.23-0.514-0.514c0-0.284,0.23-0.514,0.514-0.514c0.284,0,0.514,0.23,0.514,0.514C6.402,17.137,6.173,17.367,5.888,17.367z M5.203,10c0-0.377,0.19-0.928,0.423-1.225c0,0,0.651-0.831,1.976-0.831c0.672,0,1.141,0.309,1.141,0.309C9.057,8.46,9.315,8.938,9.315,9.315v1.028c0,0.188-0.308,0.343-0.685,0.343H5.888C5.511,10.685,5.203,10.377,5.203,10z M7.944,16.853H7.259v-1.371l0.685-0.685V16.853z M9.657,16.853H8.629v-2.741h1.028V16.853zM8.972,13.426v-1.028c0-0.568,0.46-1.028,1.028-1.028c0.568,0,1.028,0.46,1.028,1.028v1.028H8.972z M11.371,16.853h-1.028v-2.741h1.028V16.853z M12.741,16.853h-0.685v-2.056l0.685,0.685V16.853z M14.112,17.367c-0.284,0-0.514-0.23-0.514-0.514c0-0.284,0.23-0.514,0.514-0.514c0.284,0,0.514,0.23,0.514,0.514C14.626,17.137,14.396,17.367,14.112,17.367z M14.112,10.685h-2.741c-0.377,0-0.685-0.154-0.685-0.343V9.315c0-0.377,0.258-0.855,0.572-1.062c0,0,0.469-0.309,1.141-0.309c1.325,0,1.976,0.831,1.976,0.831c0.232,0.297,0.423,0.848,0.423,1.225S14.489,10.685,14.112,10.685z M18.347,15.801c-0.041,0.016-0.083,0.023-0.124,0.023c-0.137,0-0.267-0.083-0.319-0.218l-2.492-6.401c-0.659-1.647-1.474-2.289-2.905-2.289c-0.95,0-1.746,0.589-1.754,0.595c-0.422,0.317-1.084,0.316-1.507,0C9.239,7.505,8.435,6.916,7.492,6.916c-1.431,0-2.246,0.642-2.906,2.292l-2.491,6.398c-0.069,0.176-0.268,0.264-0.443,0.195c-0.176-0.068-0.264-0.267-0.195-0.444l2.492-6.401c0.765-1.911,1.824-2.726,3.543-2.726c1.176,0,2.125,0.702,2.165,0.731c0.179,0.135,0.506,0.135,0.685,0c0.04-0.029,0.99-0.731,2.165-0.731c1.719,0,2.779,0.814,3.542,2.723l2.493,6.404C18.611,15.534,18.524,15.733,18.347,15.801z"></path>
+                        </svg>
+                      </div>
+                      <div class="info">
+                      <h1>Title Card #2</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, magni, corporis perferendis sit libero ducimus fuga cupiditate officiis dolore deserunt at. Adipisci iste sint repellat eos optio, nulla doloremque vitae.</p>
+                        <a href="#">Buy Now</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item" style="background: #151515">
+                    <div class="card" style="background: #151515">
+                      <!-- <img src="url"> -->
+                        
+                      <div class="img">
+                        <img src="img/classificacao1.png" style="image-orientation: from-image;" />
+                      </div>
+                      <div class="info">
+                      <h1>Title Card #3</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum harum enim cumque, dolore repellat quidem, qui eligendi ipsa mollitia, laborum quo animi eaque eius rem odit, quas eum. Praesentium, perferendis.</p>
+                        
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              
+              <nav>
+                  <a href="#" class="prev">
+                    <svg viewBox="0 0 20 20">
+                      <path fill="#FFFFFF" stroke-width="0" d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
+                    </svg>
+                  </a>
+                  <a href="#" class="next">
+                    <svg viewBox="0 0 20 20">
+                      <path fill="#FFFFFF" stroke-width="0" d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
+                    </svg>
+                  </a>
+                </nav>
+                
+                
+                
+              </div>
+            
+        
+            
+        </div>
+    </section>
+
+    <section class="containner_04">
+        <div class="containner_04_div_01">
+            <div class="containner_video">
+                video
+            </div>
+            <div class="containner_fotos">
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_01.jpg">
+                    <img src="./imagens/galeria_home_01.jpg">
+                </a>
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_02.jpg">
+                    <img src="./imagens/galeria_home_02.jpg">
+                </a>
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_03.jpg">
+                    <img src="./imagens/galeria_home_03.jpg">
+                </a>
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_04.jpg">
+                    <img src="./imagens/galeria_home_04.jpg">
+                </a>
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_05.jpg">
+                    <img src="./imagens/galeria_home_05.jpg">
+                </a>
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_06.jpg">
+                    <img src="./imagens/galeria_home_06.jpg">
+                </a>
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_07.jpg">
+                    <img src="./imagens/galeria_home_07.jpg">
+                </a>
+                <a class="text-link" class="magnificPopup" href="./imagens/galeria_home_08.jpg">
+                    <img src="./imagens/galeria_home_08.jpg">
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+<section class="containner_footer">
+    <div class="containner_footer_limit">
+        <div class="containner_footer_div right">
+            <img src="img/ativo2.png">
+        </div>
+        <div class="containner_footer_div right">
+            <h2 class="titlefooter">
+                Contato
+            </h2>
+            <ul>
+                <li  class="contato whatsapp">
+                    (11) 98980-6776
+               </li>
+               <li class="contato email">
+                   salusquiropraxia@gmail.com</a>
+               </li>
+               <li class="contato site">
+                   www.salusquiropraxia.com.br</a>
+               </li>
+               <li class="contato gps">
+                   R. Francisco Leitão, 258 - SALA 06 - Pinheiros, São Paulo                     </li>
+               <li class="contato horario">
+                   Atendimento: das 9h30 ás 18h30 (seg a sex)</a>
+               </li>
+            </ul>
+        </div>
+        <div class="containner_footer_div right">
+            <h2 class="titlefooter">
+                Navegue
+            </h2>
+            <ul>
+                <li>
+                    <a class="rodape" href="index.html" >Inicio</a>
+                </li>
+                <li>
+                    <a class="rodape" href="quemsomos.html" >Quem somos</a>
+                </li>
+                <li>
+                    <a class="rodape" href="servicos.html" >Serviços</a>
+                </li>
+                <li>
+                    <a class="rodape" href="contato.html" >Contato</a>
+                </li>
+                <li>
+                    <a class="rodape" href="localizacao.html" >Localização</a>
+                </li>
+                
+                
+            </ul>
+        </div>
+       
+    </div>
+</section>
+
+<a href="">
+    <section class="containner_whatsapp">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a href="https://wa.me/5511989806776?text=Oi!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Salus!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+                <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+            </a>
+    </section>
+</a>
+
+
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+
+</body>
+</html>
+
+
+
